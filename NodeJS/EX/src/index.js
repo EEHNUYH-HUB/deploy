@@ -3,24 +3,22 @@ const express = require("express");
 const app = express();
 const port = 5000;
 
-app.get("/", (req, res) => {
-  res.send("O22222222222222222K");
-});
+app.get("/:cnt", (req, res) => {
+  var {cnt} = req.params;
+  
+  var start = new Date();
+  const wakeUpTime = Date.now() + cnt*1;
+    
+  while (Date.now() < wakeUpTime) {
 
-app.get("/test", (req, res) => {
-  res.send("TESTPAGE2");
-});
 
-app.get("/test1", (req, res) => {
-  res.send("test1!");
-});
+  }
 
-app.get("/test2", (req, res) => {
-  res.send("tes2t!");
-});
+  var s = "index1  시작:"+start.getHours()+":"+start.getMinutes()+":"+start.getSeconds()
+  start = new Date();
+  var e =  "종료:"+start.getHours()+":"+start.getMinutes()+":"+start.getSeconds()
+  res.send(s+" <br/> "+e +"<br/>");
 
-app.get("/test3", (req, res) => {
-  res.send("3!");
 });
 
 app.listen(port, () => {
