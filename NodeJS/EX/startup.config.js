@@ -18,10 +18,10 @@ module.exports = {
             env_mssql: {
                 // 운영 환경설정 (--env production 옵션으로 지정할 수 있다.)
                 NODE_ENV: 'development_mssql',
-                DBHOST: "20.196.83.73",
-                DBNAME: "HallstattV2_dev",
-                DBUSER: "interlaken",
-                DBPASSWORD: "C1@udZEN.c@.kr22@2",
+                DBHOST: "40.82.153.85",
+                DBNAME: "TEST",
+                DBUSER: "sa",
+                DBPASSWORD: "P@ssw0rd",
                 DBPORT: "1433",
                 DBTYPE: "MSSQL",
             },
