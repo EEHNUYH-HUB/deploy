@@ -1,8 +1,14 @@
 const express = require("express");
 const { getClient } = require("../dbAccess/client.factory.js");
+const dotenv = require("dotenv");
+dotenv.config();
 const clientInstance = getClient();
 const router = express.Router();
 
+
+router.get('/', (req, res) => {
+    res.send(process.env.NODE_ENV);
+})
 
 router.post('/datatable', async (req, res) => {
     try {
