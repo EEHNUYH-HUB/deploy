@@ -1,24 +1,14 @@
 const express = require("express");
 const { v4 } = require("uuid");
 const app = express();
-const port = 5000;
+const port = 5001;
 const id = v4();
-app.get("/", (req, res) => {
 
-    res.send("하이");
-})
-app.get("/paramtest/:test1", (req, res) => {
-    const { test1 } = req.params;
-    const { test2 } = req.query;
-
-    res.send(test1 + "<br />" + test2);
-
-})
 app.get("/:ms", (req, res) => {
-    const { ms } = req.params;
-    var start = new Date();
-    const wakeUpTime = Date.now() + parseInt(ms);
-    while (Date.now() < wakeUpTime) {
+    const { ms } = req.params; 
+var start = new Date();
+const wakeUpTime = Date.now() + parseInt(ms);
+    while (Date.now() < wakeUpTime) { 
 
     }
     var end = new Date();
