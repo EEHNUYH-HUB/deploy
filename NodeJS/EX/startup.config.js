@@ -31,7 +31,7 @@ module.exports = {
                 DBHOST: "jmfc.eehnuyh.com",
                 DBNAME: "JMFC",
                 DBUSER: "postgres",
-                DBPASSWORD: "HyunHee1228!@#",
+                DBPASSWORD: "*********",
                 DBPORT: 5432,
                 DBTYPE: "POSTGRESQL",
             }
