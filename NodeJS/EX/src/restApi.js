@@ -1,12 +1,15 @@
 const express = require('express');
-const dotenv = require("dotenv");
 var bodyParser = require('body-parser');
+
+
 const app = express();
+const dotenv = require("dotenv");
 dotenv.config();
 
-const dynamicApi = require('./src/controllers/dynamic.db.controller.js');
+const dynamicApi = require('./controllers/dynamic.db.controller.js');
 
-app.set('port', process.env.LISTENPORT);
+
+app.set('port', process.env.APIPORT);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

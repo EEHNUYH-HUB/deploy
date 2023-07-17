@@ -67,6 +67,7 @@ class msSqlClient {
 
     }
     async datatable(spName, params) {
+        //console.log(spName)
         var result = await this.request(spName, params);
 
         var obj = new Object;
@@ -74,6 +75,7 @@ class msSqlClient {
         if (result && result.recordset)
             obj.result = result.recordset;
 
+        //console.log(result.recordset)
         return obj;
 
     }
