@@ -9,7 +9,7 @@ import { Decrypt } from "./util.crypto.js";
 import unzipper from 'unzipper';
 dotenv.config();
 
-//test
+//test2
 export class FlowCommonPath{
 
     private static _rootDir:string = "./src/dynamic";
