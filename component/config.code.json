@@ -1,0 +1,994 @@
+{
+    "VERSION": 1,
+    "CODE": [
+        {
+            "COL_CODE": "Fixed",
+            "COL_GROUP": "CTRL",
+            "COL_NAME": "Fixed Control"
+        },
+        {
+            "COL_CODE": "Function",
+            "COL_GROUP": "CTRL",
+            "COL_NAME": "Function Control"
+        },
+        {
+            "COL_CODE": "DataTableCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "DataTable Control"
+        }, {
+            "COL_CODE": "CardCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "Card Control"
+        },
+        {
+            "COL_CODE": "ListCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "List Control"
+        },
+        {
+            "COL_CODE": "ChartCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "Chart Control"
+        },
+        {
+            "COL_CODE": "TreeCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "Tree Control"
+        },
+        {
+            "COL_CODE": "MindMapCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "Mind Map Control"
+        },
+        {
+            "COL_CODE": "ChatCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "Chat Control"
+        },
+        {
+            "COL_CODE": "TabCtrl",
+            "COL_GROUP": "FCUI",
+            "COL_NAME": "Tab Control"
+        },
+        {
+            "COL_CODE": "NoneCtrl",
+            "COL_GROUP": "FCUI2",
+            "COL_NAME": "바로 실행"
+        },
+        {
+            "COL_CODE": "SearchCtrl",
+            "COL_GROUP": "FCUI2",
+            "COL_NAME": "검색형"
+        },
+        {
+            "COL_CODE": "InputCtrl",
+            "COL_GROUP": "FCUI2",
+            "COL_NAME": "저장형"
+        },
+        {
+            "COL_CODE": "ChatCtrl",
+            "COL_GROUP": "FCUI2",
+            "COL_NAME": "대화형"
+        },
+
+        {
+            "COL_CODE": "ACTUI1",
+            "COL_GROUP": "ACTUI",
+            "COL_NAME": "Edit Control"
+        },
+       
+        {
+            "COL_CODE": "HiddenValue",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "Hidden"
+        },
+        {
+            "COL_CODE": "DateTimeParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "DateTime"
+        },
+       
+        {
+            "COL_CODE": "TextParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "TextBox"
+        },
+        {
+            "COL_CODE": "MultiTextParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "Multi TextBox"
+        },
+      
+        {
+            "COL_CODE": "PasswordParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "Password"
+        },
+        {
+            "COL_CODE": "LabelParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "Label"
+        },
+        {
+            "COL_CODE": "BooleanParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "CheckBox"
+        },
+        {
+            "COL_CODE": "NumberParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "NumberBox"
+        },
+
+        {
+            "COL_CODE": "HtmlParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "HTML"
+        },
+        
+        {
+            "COL_CODE": "DropDownParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "DropDown"
+        },
+        {
+            "COL_CODE": "LookupParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "DropDown(Component)"
+        }, {
+            "COL_CODE": "FileUploadParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "File Upload"
+        },{
+            "COL_CODE": "MultiFileUploadParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "File Upload(Multi)"
+        },
+        {
+            "COL_CODE": "ButtonParam",
+            "COL_GROUP": "PRMTYPE",
+            "COL_NAME": "Button"
+        },
+        {
+            "COL_CODE": "DataTimeParamItem1",
+            "COL_GROUP": "PERIOD",
+            "COL_NAME": "현재"
+        },
+        {
+            "COL_CODE": "DataTimeParamItem2",
+            "COL_GROUP": "PERIOD",
+            "COL_NAME": "일주전"
+        },
+        {
+            "COL_CODE": "DataTimeParamItem3",
+            "COL_GROUP": "PERIOD",
+            "COL_NAME": "한달전"
+        },
+        {
+            "COL_CODE": "DataTimeParamItem4",
+            "COL_GROUP": "PERIOD",
+            "COL_NAME": "일년전"
+        },
+        {
+            "COL_CODE": "Menu",
+            "COL_GROUP": "MENU",
+            "COL_NAME": "Menu"
+        },
+        {
+            "COL_CODE": "SubMenu",
+            "COL_GROUP": "MENU",
+            "COL_NAME": "Sub Menu"
+        },
+        {
+            "COL_CODE": "Page",
+            "COL_GROUP": "MENU",
+            "COL_NAME": "Page"
+        },
+        {
+            "COL_CODE": "BoldStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Bold"
+        },
+        {
+            "COL_CODE": "BoldStyleNoWrap",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Bold (Nowrap)"
+        },
+        
+        {
+            "COL_CODE": "DefaultStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Default"
+        },
+        {
+            "COL_CODE": "SubStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Default (Nowrap)"
+        },
+        {
+            "COL_CODE": "SymbolStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Symbol"
+        },
+        {
+            "COL_CODE": "DateStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Date"
+        },{
+            "COL_CODE": "NumberStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Number"
+        },
+        {
+            "COL_CODE": "BadgeStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Badge"
+        },
+        {
+            "COL_CODE": "ProgressLineStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Progress Line"
+        },
+        {
+            "COL_CODE": "ProgressCircleStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Progress Circle"
+        },
+        {
+            "COL_CODE": "JSONStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "JSON"
+        },
+        {
+            "COL_CODE": "MarkdownStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Markdown"
+        },
+        {
+            "COL_CODE": "HtmlStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "HTML"
+        },
+        
+        {
+            "COL_CODE": "FileDownLoadStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "File Download"
+        },
+        {
+            "COL_CODE": "ImageViewStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Image View"
+        },
+        {
+            "COL_CODE": "SymbolImageStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Symbol Image"
+        },
+        
+        {
+            "COL_CODE": "LinkStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Link"
+        },
+      
+        {
+            "COL_CODE": "IConStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Icon"
+        },
+        {
+            "COL_CODE": "MulitLineStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Multi Line"
+        },
+        {
+            "COL_CODE": "ConditionalStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Conditional"
+        },
+
+        {
+            "COL_CODE": "ButtonStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Button"
+        },
+        {
+            "COL_CODE": "CheckBoxStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "CheckBox"
+        },
+        {
+            "COL_CODE": "HiddenStyle",
+            "COL_GROUP": "CTRLST",
+            "COL_NAME": "Hidden"
+        },
+        {
+            "COL_CODE": "LYMENU0001",
+            "COL_GROUP": "LYMENU",
+            "COL_NAME": "Left"
+        },
+        {
+            "COL_CODE": "LYMENU0002",
+            "COL_GROUP": "LYMENU",
+            "COL_NAME": "Header"
+        },
+        {
+            "COL_CODE": "LYWIDTH001",
+            "COL_GROUP": "LYWIDTH",
+            "COL_NAME": "Fixed"
+        },
+        {
+            "COL_CODE": "LYWIDTH002",
+            "COL_GROUP": "LYWIDTH",
+            "COL_NAME": "Fluid"
+        },
+        {
+            "COL_CODE": "LYWIDTH003",
+            "COL_GROUP": "LYWIDTH",
+            "COL_NAME": "Hide"
+        },
+        {
+            "COL_CODE": "LYWIDTH004",
+            "COL_GROUP": "LYWIDTH",
+            "COL_NAME": "Minimum"
+        },
+        {
+            "COL_CODE": "CHARTYP001",
+            "COL_GROUP": "CHARTYP",
+            "COL_NAME": "Bar Chart"
+        },
+        {
+            "COL_CODE": "CHARTYP002",
+            "COL_GROUP": "CHARTYP",
+            "COL_NAME": "Line Chart"
+        },
+        {
+            "COL_CODE": "CHARTYP003",
+            "COL_GROUP": "CHARTYP",
+            "COL_NAME": "Pie Chart"
+        },
+        
+        {
+            "COL_CODE": "JOINTYPE01",
+            "COL_GROUP": "JOINTYPE",
+            "COL_NAME": "SELECT"
+        },
+        {
+            "COL_CODE": "DTTYPE0001",
+            "COL_GROUP": "DTTYPE",
+            "COL_NAME": "Default"
+        },
+        {
+            "COL_CODE": "DTTYPE0002",
+            "COL_GROUP": "DTTYPE",
+            "COL_NAME": "Simple"
+        },
+        {
+            "COL_CODE": "LoadEvent",
+            "COL_GROUP": "CALLTYPE",
+            "COL_NAME": "바로 호출"
+        },
+        {
+            "COL_CODE": "SelectEvent",
+            "COL_GROUP": "CALLTYPE",
+            "COL_NAME": "아이템 선택시 호출"
+        },
+        {
+            "COL_CODE": "DoubleEvent",
+            "COL_GROUP": "CALLTYPE",
+            "COL_NAME": "아이템 더블 클릭시 호출"
+        },
+        {
+            "COL_CODE": "ButtonClickEvent",
+            "COL_GROUP": "CALLTYPE",
+            "COL_NAME": "버튼 클릭시 호출"
+        },
+        {
+            "COL_CODE": "ExpandEvent",
+            "COL_GROUP": "CALLTYPE",
+            "COL_NAME": "확장시 호출"
+        },
+        {
+            "COL_CODE": "btn",
+            "COL_GROUP": "BTNTYPE",
+            "COL_NAME": "Button"
+        },
+        
+        {
+            "COL_CODE": "iconbtn",
+            "COL_GROUP": "BTNTYPE",
+            "COL_NAME": "Icon Button"
+        },
+        {
+            "COL_CODE": "POPUP",
+            "COL_GROUP": "FUNSHOWTYPE",
+            "COL_NAME": "Popup"
+        },
+        {
+            "COL_CODE": "DRAWER",
+            "COL_GROUP": "FUNSHOWTYPE",
+            "COL_NAME": "Drawer"
+        },
+        {
+            "COL_CODE": "FULLSCRREN",
+            "COL_GROUP": "FUNSHOWTYPE",
+            "COL_NAME": "Full Screen"
+        },
+        {
+            "COL_CODE": "BackgroundFunction",
+            "COL_GROUP": "FUNTYPE",
+            "COL_NAME": "Background Function"
+        },
+        {
+            "COL_CODE": "ControlFunction",
+            "COL_GROUP": "FUNTYPE",
+            "COL_NAME": "Control Function"
+        },
+        {
+            "COL_CODE": "primary",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Primary"
+        },
+        {
+            "COL_CODE": "secondary",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Secondary"
+        },
+        {
+            "COL_CODE": "success",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Success"
+        },
+        {
+            "COL_CODE": "error",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Error"
+        },
+        {
+            "COL_CODE": "warning",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Warning"
+        },
+        {
+            "COL_CODE": "info",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Info"
+        },
+        {
+            "COL_CODE": "light-primary",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Light Primary"
+        },
+        {
+            "COL_CODE": "light-secondary",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Light Secondary"
+        },
+        {
+            "COL_CODE": "light-success",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Light Success"
+        },
+        {
+            "COL_CODE": "light-error",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Light Error"
+        },
+        {
+            "COL_CODE": "light-warning",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Light Warning"
+        },
+        {
+            "COL_CODE": "light-info",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Light Info"
+        }, {
+            "COL_CODE": "text-primary",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Text Primary"
+        },
+        {
+            "COL_CODE": "text-secondary",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Text Secondary"
+        },
+        {
+            "COL_CODE": "text-success",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Text Success"
+        },
+        {
+            "COL_CODE": "text-error",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Text Error"
+        },
+        {
+            "COL_CODE": "text-warning",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Text Warning"
+        },
+        {
+            "COL_CODE": "text-info",
+            "COL_GROUP": "COLORST",
+            "COL_NAME": "Text Info"
+        },
+        {
+            "COL_CODE": "GET",
+            "COL_GROUP": "RSTMETHOD",
+            "COL_NAME": "GET"
+        },
+        {
+            "COL_CODE": "POST",
+            "COL_GROUP": "RSTMETHOD",
+            "COL_NAME": "POST"
+        },
+        {
+            "COL_CODE": "PUT",
+            "COL_GROUP": "RSTMETHOD",
+            "COL_NAME": "PUT"
+        },
+        {
+            "COL_CODE": "PATCH",
+            "COL_GROUP": "RSTMETHOD",
+            "COL_NAME": "PATCH"
+        },
+        {
+            "COL_CODE": "DELETE",
+            "COL_GROUP": "RSTMETHOD",
+            "COL_NAME": "DELETE"
+        },
+       
+        {
+            "COL_CODE": "SERVER",
+            "COL_GROUP": "RSTRUNTP",
+            "COL_NAME": "SERVER"
+        },
+        {
+            "COL_CODE": "CLIENT",
+            "COL_GROUP": "RSTRUNTP",
+            "COL_NAME": "CLIENT"
+        }
+        ,
+        {
+            "COL_CODE": "POSTGRESQL",
+            "COL_GROUP": "DBTYPE",
+            "COL_NAME": "PostgreSQL"
+        }
+        ,
+        {
+            "COL_CODE": "MSSQL",
+            "COL_GROUP": "DBTYPE",
+            "COL_NAME": "SQL Server"
+        }
+        ,
+        {
+            "COL_CODE": "MYSQL",
+            "COL_GROUP": "DBTYPE",
+            "COL_NAME": "MySQL"
+        }
+        ,
+        {
+            "COL_CODE": "MARIADB",
+            "COL_GROUP": "DBTYPE",
+            "COL_NAME": "MariaDB"
+        }
+        ,
+        {
+            "COL_CODE": "String",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "String"
+        },
+        {
+            "COL_CODE": "Number",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Number"
+        },
+        {
+            "COL_CODE": "Boolean",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Boolean"
+        },
+        {
+            "COL_CODE": "Object",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Object"
+        },
+        {
+            "COL_CODE": "Any",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Any"
+        },
+        {
+            "COL_CODE": "Array_String",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Array<String>"
+        },
+        {
+            "COL_CODE": "Array_Number",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Array<Number>"
+        },
+        {
+            "COL_CODE": "Array_Boolean",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Array<Boolean>"
+        },
+        {
+            "COL_CODE": "Array",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Array<Object>"
+        },
+        {
+            "COL_CODE": "Array_Any",
+            "COL_GROUP": "RSTOUTPUT",
+            "COL_NAME": "Array<Any>"
+        },
+        {
+            "COL_CODE": "for",
+            "COL_GROUP": "CODE",
+            "COL_NAME": "Loop"
+        },
+        {
+            "COL_CODE": "jsonParser",
+            "COL_GROUP": "CODE",
+            "COL_NAME": "Json Parser"
+        }
+        ,
+        {
+            "COL_CODE": "javascript",
+            "COL_GROUP": "CODE",
+            "COL_NAME": "Javascript"
+        },
+        {
+            "COL_CODE": "String",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "String"
+        },
+        {
+            "COL_CODE": "Number",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Number"
+        },
+        {
+            "COL_CODE": "Boolean",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Boolean"
+        },
+        {
+            "COL_CODE": "Object",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Object"
+        },
+        {
+            "COL_CODE": "Any",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Any"
+        },
+        {
+            "COL_CODE": "Array_String",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Array<String>"
+        },
+        {
+            "COL_CODE": "Array_Number",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Array<Number>"
+        },
+        {
+            "COL_CODE": "Array_Boolean",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Array<Boolean>"
+        },
+        {
+            "COL_CODE": "Array",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Array<Object>"
+        },
+        {
+            "COL_CODE": "Array_Any",
+            "COL_GROUP": "CONDITIONVALUETYPE",
+            "COL_NAME": "Array<Any>"
+        },
+        {
+            "COL_CODE": "===",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "==="
+        }
+        ,
+        {
+            "COL_CODE": "==",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "=="
+        }
+        ,
+        {
+            "COL_CODE": "!==",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "!=="
+        }
+        ,
+        {
+            "COL_CODE": "!=",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "!="
+        }
+        ,
+        {
+            "COL_CODE": ">",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": ">"
+        }
+        
+        ,
+        {
+            "COL_CODE": ">=",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": ">="
+        }
+        ,
+        {
+            "COL_CODE": "<",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "<"
+        }
+        ,
+        {
+            "COL_CODE": "<=",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "<="
+        }
+        ,
+        {
+            "COL_CODE": "<=",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "<="
+        }
+        ,
+        {
+            "COL_CODE": "Contains",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "Contains"
+        } ,
+        {
+            "COL_CODE": "NotContains",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "Not Contains"
+        }
+
+
+        ,
+        {
+            "COL_CODE": "Allow",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "Allow Value"
+        } ,
+        {
+            "COL_CODE": "NotAllow",
+            "COL_GROUP": "CONDITIONTYPE",
+            "COL_NAME": "Not Allow Value"
+        }
+
+        ,
+        {
+            "COL_CODE": "&&",
+            "COL_GROUP": "ANDOR",
+            "COL_NAME": "AND"
+        }
+        ,
+        {
+            "COL_CODE": "||",
+            "COL_GROUP": "ANDOR",
+            "COL_NAME": "OR"
+        }
+
+        ,
+        {
+            "COL_CODE": "nodejs",
+            "COL_GROUP": "Lang",
+            "COL_NAME": "Node.js"
+        }
+        ,
+        {
+            "COL_CODE": "python",
+            "COL_GROUP": "Lang",
+            "COL_NAME": "Python"
+        }
+        ,
+        {
+            "COL_CODE": "dark",
+            "COL_GROUP": "THEME",
+            "COL_NAME": "Dark"
+        }
+        ,
+        {
+            "COL_CODE": "light",
+            "COL_GROUP": "THEME",
+            "COL_NAME": "Light"
+        }
+        ,
+        {
+            "COL_CODE": "SYSTEM",
+            "COL_GROUP": "AUTH",
+            "COL_NAME": "System"
+        },
+        {
+            "COL_CODE": "ADMIN",
+            "COL_GROUP": "AUTH",
+            "COL_NAME": "Administrator"
+        },
+        {
+            "COL_CODE": "USER",
+            "COL_GROUP": "AUTH",
+            "COL_NAME": "User"
+        }
+      
+        ,
+        {
+            "COL_CODE": "String",
+            "COL_GROUP": "ENV",
+            "COL_NAME": "String"
+        }
+        ,
+        {
+            "COL_CODE": "Password",
+            "COL_GROUP": "ENV",
+            "COL_NAME": "String(Password)"
+        }
+        ,
+        {
+            "COL_CODE": "Number",
+            "COL_GROUP": "ENV",
+            "COL_NAME": "Number"
+        }
+        ,
+        {
+            "COL_CODE": "Boolean",
+            "COL_GROUP": "ENV",
+            "COL_NAME": "Boolean"
+        },{
+            "COL_CODE": "SCHDTYPE1",
+            "COL_GROUP":"SCHDTYPE",
+            "COL_NAME":"반복 실행"
+        }
+        ,{
+            "COL_CODE": "SCHDTYPE2",
+            "COL_GROUP":"SCHDTYPE",
+            "COL_NAME":"한번 실행"
+        }
+            
+        ,{
+            "COL_CODE": "SCHDTYPE3",
+            "COL_GROUP":"SCHDTYPE",
+            "COL_NAME":"매일 실행"
+        }
+        ,{
+            "COL_CODE": "SCHDTYPE4",
+            "COL_GROUP":"SCHDTYPE",
+            "COL_NAME":"매주 실행"
+        }
+        ,{
+            "COL_CODE": "SCHDTYPE5",
+            "COL_GROUP":"SCHDTYPE",
+            "COL_NAME":"매월 실행"
+        }
+        
+        ,{
+            "COL_CODE": "Sunday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"일요일"
+        }
+        ,{
+            "COL_CODE": "Monday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"월요일"
+        }
+        ,{
+            "COL_CODE": "Tuesday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"화요일"
+        }
+        ,{
+            "COL_CODE": "Wednesday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"수요일"
+        }
+        ,{
+            "COL_CODE": "Thursday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"목요일"
+        }
+        ,{
+            "COL_CODE": "Friday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"금요일"
+        }
+        ,{
+            "COL_CODE": "Saturday",
+            "COL_GROUP":"WEEKTYPE",
+            "COL_NAME":"토요일"
+        }
+        ,{
+            "COL_CODE": "INTERVALTYPE1",
+            "COL_GROUP":"INTERVALTYPE",
+            "COL_NAME":"초 간격으로 실행"
+        }
+        ,{
+            "COL_CODE": "INTERVALTYPE2",
+            "COL_GROUP":"INTERVALTYPE",
+            "COL_NAME":"분 간격으로 실행"
+        }
+        ,{
+            "COL_CODE": "INTERVALTYPE3",
+            "COL_GROUP":"INTERVALTYPE",
+            "COL_NAME":"시간 간격으로 실행"
+        }
+        ,{
+            "COL_CODE": "LOADOPT1",
+            "COL_GROUP":"LOADOPT",
+            "COL_NAME":"모든 데이터 불러오기"
+        }
+        ,{
+            "COL_CODE": "LOADOPT2",
+            "COL_GROUP":"LOADOPT",
+            "COL_NAME":"선택시 데이터 불러오기"
+        } 
+        ,{
+            "COL_CODE": "ENDPOINTTYPE1",
+            "COL_GROUP":"ENDPOINTTYPE",
+            "COL_NAME":"디버그"
+        }
+        ,{
+            "COL_CODE": "ENDPOINTTYPE2",
+            "COL_GROUP":"ENDPOINTTYPE",
+            "COL_NAME":"개발"
+        }
+        ,{
+            "COL_CODE": "ENDPOINTTYPE3",
+            "COL_GROUP":"ENDPOINTTYPE",
+            "COL_NAME":"로컬"
+        },{
+            "COL_CODE": "ENDPOINTTYPE4",
+            "COL_GROUP":"ENDPOINTTYPE",
+            "COL_NAME":"운영"
+        }
+       
+        ,{
+            "COL_CODE": "LOGGING1",
+            "COL_GROUP":"LOGGING",
+            "COL_NAME":"NONE"
+        }
+        ,{
+            "COL_CODE": "LOGGING2",
+            "COL_GROUP":"LOGGING",
+            "COL_NAME":"ERROR"
+        }
+        ,{
+            "COL_CODE": "LOGGING3",
+            "COL_GROUP":"LOGGING",
+            "COL_NAME":"TRACE"
+        }
+        ,{
+            "COL_CODE": "error",
+            "COL_GROUP":"MSGTYPE",
+            "COL_NAME":"Error"
+        }
+        ,{
+            "COL_CODE": "success",
+            "COL_GROUP":"MSGTYPE",
+            "COL_NAME":"Success"
+        }
+        ,{
+            "COL_CODE": "warning",
+            "COL_GROUP":"MSGTYPE",
+            "COL_NAME":"Warning"
+        }
+        ,{
+            "COL_CODE": "info",
+            "COL_GROUP":"MSGTYPE",
+            "COL_NAME":"Info"
+        }
+        
+    ]
+}
