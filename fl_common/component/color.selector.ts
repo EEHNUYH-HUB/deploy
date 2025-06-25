@@ -5,7 +5,7 @@ import { KeyValue } from 'flowline_common_model/src/models';
 export type ColorType = "red"|"pink"|"purple"|"deepPurple"|"indigo"|"blue"|"lightBlue"|"cyan"|"teal"|"green"|"lightGreen"|"lime"|"yellow"|"amber"|"orange"|"deepOrange"|"brown"|"grey"|"blueGrey"|undefined
 
 export type ColorShape = 50|100|200|300|400|500|600|700|800|900
-//test
+//test2
 export const ColorTypes:KeyValue[] = [
     {key:"red",value:"red"},
     {key:"pink",value:"pink"},
