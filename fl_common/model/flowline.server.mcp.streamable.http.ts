@@ -18,6 +18,7 @@ import { Request, Response } from "express";
 import { ApplicationConfiger } from "./configer.application.js";
 import { Dictionary, MCPAgentModel, MCPToolModel } from "./models.js";
 import { RunActionforAgent } from "./launcher.js";
+import { z, ZodRawShape } from "zod";
 
 const SESSION_ID_HEADER_NAME = "mcp-session-id";
 const JSON_RPC = "2.0";
@@ -55,6 +56,7 @@ export class MCPServer {
       for (var i in this._model?.Tools) {
 
         var toolModel = this._model.Tools[i];
+        console.log("TOOLMODEL",toolModel)
         if (toolModel && toolModel.AcionModel) {
           this._tools.push(this._getTool(toolModel))
         }
@@ -76,7 +78,7 @@ export class MCPServer {
       async (request, extra) => {
         const args = request.params.arguments;
         const toolName = request.params.name;
-        console.log("Received request for tool with argument:", toolName, args);
+        
 
         if (!args) {
           throw new Error("arguments undefined");
@@ -122,7 +124,7 @@ export class MCPServer {
   private _getTool (toolModel:MCPToolModel){
 
   
-    const tool: Tool = {
+    var tool: Tool = {
       name: toolModel.ToolName ? toolModel.ToolName : "",
       description: toolModel.ToolDesc,
       inputSchema: {
@@ -143,6 +145,7 @@ export class MCPServer {
           }
           tool.inputSchema.properties[param.InputColName] = { type: vType, description: param.ValueDesc ? param.ValueDesc : "" };
           tool.inputSchema.required.push(param.InputColName)
+
         }
       }
     }
@@ -152,9 +155,7 @@ export class MCPServer {
   }
 
   async handleGetRequest(req: Request, res: Response) {
-    // if server does not offer an SSE stream at this endpoint.
-    // res.status(405).set('Allow', 'POST').send('Method Not Allowed')
-console.log("handleGetRequest")
+    
     const sessionId = req.headers[SESSION_ID_HEADER_NAME] as string | undefined;
     if (!sessionId || !this.transports[sessionId]) {
       res
@@ -313,7 +314,7 @@ async function CreateInstance(projectID: string, actionID: string) {
   return instance;
 }
 
-const mcpServerFactory: Dictionary<MCPServer> = {}
+const mcpServerFactory: Dictionary<MCPServer|undefined> = {}
 
 export async function GetInstance(projectID: string, actionID: string) {
   var instance = mcpServerFactory[projectID + actionID];
@@ -334,8 +335,18 @@ export async function Cleanup() {
       var instance = mcpServerFactory[name]
       if (instance) {
         await instance.cleanup();
+        mcpServerFactory[name]=undefined
       }
     }
   }
+  
+}
 
+
+export async function ConfigerReset(projectID:string){
+Cleanup()
+  var configer = ApplicationConfiger.GetInstance(projectID);
+      if(configer){
+        await configer.Clear();
+      }
 }
