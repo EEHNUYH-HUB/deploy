@@ -10,8 +10,8 @@ import { GetDynamicButtonCss } from './ui.utils.js';
 import FileUploadContainer from './ctrl.file.upload.js'
 
 
-import { ConvertInputCtrlModelToKeyValue, ConvertKeyValueObjectToObject, Guid, ObjClone } from "flowline_common_model/src/util.common"
-import { InputCtrlModel, KeyValueAndOrgObject } from 'flowline_common_model/src/models'
+import { ConvertInputCtrlModelToKeyValue, ConvertKeyValueObjectToObject, Guid, ObjClone } from "flowline_common_model/result/util.common"
+import { InputCtrlModel, KeyValueAndOrgObject } from 'flowline_common_model/result/models'
 import LoadingButton from '@mui/lab/LoadingButton/index.js'
 
 

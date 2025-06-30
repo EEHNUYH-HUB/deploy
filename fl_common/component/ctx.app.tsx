@@ -1,5 +1,5 @@
 import { createContext, SetStateAction, Dispatch, FC, useState, useContext, useEffect, PropsWithChildren } from 'react';
-import { LoginType, UserInfo } from 'flowline_common_model/src/models';
+import { LoginType, UserInfo } from 'flowline_common_model/result/models';
 
 
 import { MsalProvider } from '@azure/msal-react';
@@ -11,7 +11,7 @@ import { SnackbarProvider } from 'notistack';
 import { IPublicClientApplication } from '@azure/msal-browser';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { ConvertInputCtrlModelToKeyValue, ConvertKeyValueObjectToObject } from 'flowline_common_model/src/util.common';
+import { ConvertInputCtrlModelToKeyValue, ConvertKeyValueObjectToObject } from 'flowline_common_model/result/util.common';
 import FlowLineUtils from './flowline.utils.js';
 
 

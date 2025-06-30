@@ -1,8 +1,8 @@
 import io, {Socket} from "socket.io-client";
-import { ActionModel, KeyValue } from  'flowline_common_model/src/models'
+import { ActionModel, KeyValue } from  'flowline_common_model/result/models'
 
 
-import { ConvertJsonModelToObj2, Guid } from "flowline_common_model/src/util.common";
+import { ConvertJsonModelToObj2, Guid } from "flowline_common_model/result/util.common";
 import { GetBaseUrl } from './ui.utils.js';
 
 

@@ -361,7 +361,7 @@ export class BuilderConfiger implements IFlowConfiger {
                     Modifydate: model.col_modifydate,
                     OwnerName: model.ownername,
                     ModiferName: model.modifername,
-
+                    ICon: model.col_icon ? model.col_icon : "",
                     ParentID: model.parent_unit_id,
                     Path: model.col_path,
                     MenuPath: model.col_menu_path,
@@ -1627,7 +1627,7 @@ export class BuilderConfiger implements IFlowConfiger {
             , p_user_id: usrID
             , p_col_name: page.MenuName
             , p_col_desc: page.MenuDesc
-            , p_col_icon: ""
+            , p_col_icon: page.ICon
 
         }
         await this.DBClient.Execute('pm_upsert_tbl_page', param);

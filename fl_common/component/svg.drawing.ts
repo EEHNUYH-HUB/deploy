@@ -1,4 +1,4 @@
-import { Guid } from "flowline_common_model/src/util.common";
+import { Guid } from "flowline_common_model/result/util.common";
 import { GetCenterforRect, GetOffsetPoint, GetPath, GetPathCurveType, JoinObj, SvgObj, SvgPoint, SvgRect, SvgRectSubObj } from "./svg.common.js";
 import { HorizontalAddCtrl, VerticalAddCtrl } from "ctrl.panel.add.js";
 

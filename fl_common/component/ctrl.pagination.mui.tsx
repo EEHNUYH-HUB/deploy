@@ -4,7 +4,7 @@ import { FormControl,  MenuItem, Pagination, Select } from "@mui/material";
 import { Fragment, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FilterModel, GroupByRow, SortModel } from "./ui.models.js";
-import { JsonQuery } from "flowline_common_model/src/util.common";
+import { JsonQuery } from "flowline_common_model/result/util.common";
 
 
 

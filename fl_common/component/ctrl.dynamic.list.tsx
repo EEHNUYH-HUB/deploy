@@ -6,7 +6,7 @@ import { DynamicViewProps } from "./ui.models.js"
 import CellCtrl from "./ctrl.cell.js";
 import MuiPagination from './ctrl.pagination.mui.js';
 import { CommonContainerCtrl } from './ctrl.dynamic.common.js';
-import { Guid } from 'flowline_common_model/src/util.common';
+import { Guid } from 'flowline_common_model/result/util.common';
 
 const DynamicListControl = (props: DynamicViewProps) => {
 

@@ -10,7 +10,7 @@ import {  SvgObjListToRect, JoinObj, SvgObj, SvgPoint, SvgRect, GetOffsetPoint }
 import Drawing from './svg.drawing.js';
 import SvgMover from './svg.mover.js';
 import { GroupRectCtrl ,JoinFactory } from './svg.ctrls.js'
-import { Guid } from 'flowline_common_model/src/util.common';
+import { Guid } from 'flowline_common_model/result/util.common';
 import { FormControlLabel, IconButton, Switch } from '@mui/material';
 import { Add, Remove } from '@mui/icons-material';
 

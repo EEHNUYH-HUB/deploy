@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-import { ConvertJsonToKeyValueObject, ConvertKeyValueObjectToObject } from 'flowline_common_model/src/util.common'
+import { ConvertJsonToKeyValueObject, ConvertKeyValueObjectToObject } from 'flowline_common_model/result/util.common'
 import { GetBaseUrl } from './ui.utils.js';
 
 

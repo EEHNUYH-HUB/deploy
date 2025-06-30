@@ -6,7 +6,7 @@ import { DynamicViewProps } from "./ui.models.js"
 
 import { Tab, Tabs } from '@mui/material/index.js';
 import { FlowLineStyle } from './flowline.style.js';
-import { Guid, StringKeyToValue } from 'flowline_common_model/src/util.common';
+import { Guid, StringKeyToValue } from 'flowline_common_model/result/util.common';
 import { CommonContainerCtrl } from './ctrl.dynamic.common.js';
 
 

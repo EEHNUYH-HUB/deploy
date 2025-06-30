@@ -125,6 +125,7 @@ export class PageModel {
     ParentID: string | undefined;
     MenuName: string = '';
     GroupName: string='';
+    ICon?:string;    
     MenuDesc: string | undefined;
     Path: string = '';
 

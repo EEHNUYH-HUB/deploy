@@ -1,8 +1,8 @@
 import { useEffect, useState,  Fragment, useRef } from "react"
 
 
-import { PageModel, Dictionary, ControlModel} from 'flowline_common_model/src/models'
-import {ObjClone, StringKeyToValue} from 'flowline_common_model/src/util.common'
+import { PageModel, Dictionary, ControlModel} from 'flowline_common_model/result/models'
+import {ObjClone, StringKeyToValue} from 'flowline_common_model/result/util.common'
 
 import { MapParamPros, BorderEntity, UIFlowMapTable, UIFlowRunEntity, UIFlowMapColumn } from "./ui.models.js"
 import { useAppContext } from "./ctx.app.js"

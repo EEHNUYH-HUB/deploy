@@ -1,7 +1,7 @@
 import  {CSSProperties, FC,ReactNode, useEffect, useState,} from 'react'
 import clsx from 'clsx'
 
-import { Guid } from 'flowline_common_model/src/util.common';
+import { Guid } from 'flowline_common_model/result/util.common';
 import { GetBaseUrl } from './ui.utils.js';
 
 

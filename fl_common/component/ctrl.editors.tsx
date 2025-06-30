@@ -10,8 +10,8 @@ import FlowLineUtils from './flowline.utils.js';
 import { FlowLineStyle } from './flowline.style.js';
 import FlowLineClient from './flowline.client.js';
 
-import { JsonModel, KeyValue, LookUpSetting, KeyValueAndOrgObject, ReturnModel } from 'flowline_common_model/src/models'
-import { ConvertDateToYYYY_MM_DD, ConvertInputCtrlModelToKeyValue, CopyArray, JsonQuery, StringKeyToValue } from 'flowline_common_model/src/util.common';
+import { JsonModel, KeyValue, LookUpSetting, KeyValueAndOrgObject, ReturnModel } from 'flowline_common_model/result/models'
+import { ConvertDateToYYYY_MM_DD, ConvertInputCtrlModelToKeyValue, CopyArray, JsonQuery, StringKeyToValue } from 'flowline_common_model/result/util.common';
 import { useAppContext } from './ctx.app.js';
 
 

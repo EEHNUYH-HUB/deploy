@@ -3,8 +3,8 @@ import { GetCache } from './ui.utils.js';
 import APIClient from './restapi.client.js';
 
 
-import { ActionModel, ControlModel, DBConnectionModel, KeyValue, LoginInfo, MCPAgentModel, OrchestrationModel, PageModel, ScheduleModel, TemplateModel, UnitModel, UserInfo } from 'flowline_common_model/src/models';
-import { ConvertJsonModelToObj2, Guid, RunJavascript, SetKeyValueforObj } from 'flowline_common_model/src/util.common';
+import { ActionModel, ControlModel, DBConnectionModel, KeyValue, LoginInfo, MCPAgentModel, OrchestrationModel, PageModel, ScheduleModel, TemplateModel, UnitModel, UserInfo } from 'flowline_common_model/result/models';
+import { ConvertJsonModelToObj2, Guid, RunJavascript, SetKeyValueforObj } from 'flowline_common_model/result/util.common';
 import { AuthenticationResult, Configuration, EventMessage, EventPayload, PublicClientApplication } from "@azure/msal-browser";
 const isIE = window.navigator.userAgent.indexOf("MSIE ") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1;
 

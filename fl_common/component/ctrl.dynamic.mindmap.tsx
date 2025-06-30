@@ -1,7 +1,7 @@
 
 
 import { useEffect, useState, memo, useRef, Fragment, ReactNode } from 'react';
-import { StringKeyToValue } from 'flowline_common_model/src/util.common'
+import { StringKeyToValue } from 'flowline_common_model/result/util.common'
 import { DynamicViewProps, TreeModel } from "./ui.models.js"
 
 import { FlowLineStyle } from './flowline.style.js';
@@ -11,7 +11,7 @@ import SvgPanel, { SvgPanelRefType } from './svg.panel.js';
 import { SvgObj, SvgObjListToRect } from './svg.common.js';
 import { SelectPicker } from './svg.ctrls.js';
 import CellCtrl, { GetCellSize } from './ctrl.cell.js';
-import { OutputCtrlModel, UIViewModel } from 'flowline_common_model/src/models.js';
+import { OutputCtrlModel, UIViewModel } from 'flowline_common_model/result/models.js';
 import { CommonContainerCtrl } from './ctrl.dynamic.common.js';
 import clsx from 'clsx';
 

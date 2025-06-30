@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material/index.js"
 import { FlowLineStyle } from "./flowline.style.js"
-import { KeyValue } from "flowline_common_model/src/models"
+import { KeyValue } from "flowline_common_model/result/models"
 import { MoveScroll } from "./ui.utils.js"
 
 

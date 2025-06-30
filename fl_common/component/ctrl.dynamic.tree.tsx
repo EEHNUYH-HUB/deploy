@@ -1,11 +1,11 @@
 
 
 import { useEffect, useState,  memo, ReactNode, } from 'react';
-import { Guid,  StringKeyToValue } from 'flowline_common_model/src/util.common'
+import { Guid,  StringKeyToValue } from 'flowline_common_model/result/util.common'
 import { DynamicViewProps, TreeModel } from "./ui.models.js"
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView/index.js';
 import { StyledTreeItem } from './ctrl.tree.mui.js';
-import { OutputCtrlModel } from 'flowline_common_model/src/models.js';
+import { OutputCtrlModel } from 'flowline_common_model/result/models.js';
 
 import { CommonContainerCtrl } from './ctrl.dynamic.common.js';
 

@@ -1,5 +1,5 @@
 import { red,pink,purple,deepPurple,indigo,blue,lightBlue,cyan,teal,green,lightGreen,lime,yellow,amber,orange ,deepOrange,brown,grey,blueGrey} from '@mui/material/colors/index.js';
-import { KeyValue } from 'flowline_common_model/src/models';
+import { KeyValue } from 'flowline_common_model/result/models';
 
 
 export type ColorType = "red"|"pink"|"purple"|"deepPurple"|"indigo"|"blue"|"lightBlue"|"cyan"|"teal"|"green"|"lightGreen"|"lime"|"yellow"|"amber"|"orange"|"deepOrange"|"brown"|"grey"|"blueGrey"|undefined

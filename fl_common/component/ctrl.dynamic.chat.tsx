@@ -8,8 +8,8 @@ import { GetBaseUrl, isHTMLString, ReactNodeToString, StringToCss } from './ui.u
 
 import FlowLineUtils from './flowline.utils.js';
 import DynamicInputControl from './ctrl.dynamic.editor.js';
-import { DateToStringShort, Guid, ConvertToTextOnlyValue, StringKeyToJsonModel, StringKeyToValue } from 'flowline_common_model/src/util.common'
-import { Dictionary, FlowRunEntity, InputCtrlModel, KeyValue } from 'flowline_common_model/src/models'
+import { DateToStringShort, Guid, ConvertToTextOnlyValue, StringKeyToJsonModel, StringKeyToValue } from 'flowline_common_model/result/util.common'
+import { Dictionary, FlowRunEntity, InputCtrlModel, KeyValue } from 'flowline_common_model/result/models'
 
 
 //import "highlight.js/styles/a11y-dark.css";

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { useEffect, useState, Fragment, ReactNode, useMemo } from "react"
-import { CtrlSetting } from 'flowline_common_model/src/models'
-import { Guid } from 'flowline_common_model/src/util.common'
+import { CtrlSetting } from 'flowline_common_model/result/models'
+import { Guid } from 'flowline_common_model/result/util.common'
 import { UIFlowRunEntity, BorderEntity } from "./ui.models.js"
 import { UIFlowMapColumn,  UIFlowMapRow,  UIFlowMapTable } from "./ui.models.js"
 import { GetColor } from "./color.selector.js";

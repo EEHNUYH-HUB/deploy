@@ -56,7 +56,7 @@ export class MCPServer {
       for (var i in this._model?.Tools) {
 
         var toolModel = this._model.Tools[i];
-        console.log("TOOLMODEL",toolModel)
+        
         if (toolModel && toolModel.AcionModel) {
           this._tools.push(this._getTool(toolModel))
         }
@@ -176,7 +176,7 @@ export class MCPServer {
 
   async handlePostRequest(req: Request, res: Response) {
 
-    console.log("HandelPost")
+    
     const sessionId = req.headers[SESSION_ID_HEADER_NAME] as string | undefined;
     let transport: StreamableHTTPServerTransport;
 

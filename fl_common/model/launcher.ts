@@ -37,9 +37,9 @@ export const RunCommand = async (configer: IFlowConfiger, prjID: string, userID:
                 //npm 패키지 설치 경로 지정
                 absolutePath = FlowCommonPath.GetNodejsDir(prjID);
 
-                const packageJsonPath = path.join(absolutePath, 'package.json');
+                
 
-                await FlowCommonPath.WriteNodePackage(prjID,packageJsonPath);
+                await FlowCommonPath.WriteNodePackage(prjID,absolutePath);
                 
 
 

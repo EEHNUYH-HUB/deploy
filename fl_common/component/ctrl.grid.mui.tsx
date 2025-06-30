@@ -4,10 +4,10 @@ import { useState, Fragment, useEffect, ReactNode } from "react";
 import CellCtrl from "./ctrl.cell.js";
 import { FlowLineStyle } from "./flowline.style.js";
 
-import { OutputCtrlModel } from 'flowline_common_model/src/models'
+import { OutputCtrlModel } from 'flowline_common_model/result/models'
 import MuiPagination, { GetFilterColumnName } from "./ctrl.pagination.mui.js";
 import { FilterModel, SortModel } from "./ui.models.js";
-import { ObjClone } from "flowline_common_model/src/util.common";
+import { ObjClone } from "flowline_common_model/result/util.common";
 import FilterToolbar from "./ctrl.grid.mui.toolbar.js";
 import { IconButton } from "@mui/material/index.js";
 import { ArrowDropDown, ArrowRight } from '@mui/icons-material';

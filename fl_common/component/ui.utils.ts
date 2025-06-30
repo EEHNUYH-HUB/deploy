@@ -1,4 +1,4 @@
-import { MuiButtonStyle } from "flowline_common_model/src/models";
+import { MuiButtonStyle } from "flowline_common_model/result/models";
 import React, { ReactNode } from "react";
 
 

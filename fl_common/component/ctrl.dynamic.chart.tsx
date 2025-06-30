@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import { DynamicViewProps } from "flowline_common_component/src/ui.models"
-import { FunctionMap, OutputCtrlModel } from 'flowline_common_model/src/models'
+import { DynamicViewProps } from "./ui.models"
+import { FunctionMap, OutputCtrlModel } from 'flowline_common_model/result/models'
 import { Fragment, useEffect, useState } from 'react';
 import { scaleOrdinal } from 'd3-scale';
 
 
 import { Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,  Bar,  Brush, ComposedChart, Area, PieChart, Pie, Cell, Sector } from 'recharts';
 import { FlowLineStyle } from "./flowline.style.js";
-import { NumberToNumberStyle } from "flowline_common_model/src/util.common";
+import { NumberToNumberStyle } from "flowline_common_model/result/util.common";
 import clsx from "clsx";
 
 const colorScale = scaleOrdinal(['#8884d8', '#82ca9d', '#ffc658', '#ff8042']);
@@ -78,7 +78,7 @@ const DynamicChartControl = (props: DynamicViewProps) => {
                 }
 
                 setPieOuputs(pies)
-
+                
                 setBarOutputs(bars);
 
 
@@ -102,12 +102,18 @@ const DynamicChartControl = (props: DynamicViewProps) => {
                 }
             }
         }
+
+
+        if (value && value.length > 0 && functionMap && functionMap.UIViewSetting?.SelectFirstItemWhenDataLoad) {
+            OnSelectItem(value[0])
+        }
     }
 
    
 
     const OnSelectItem = (item: object) => {
         if (onSelected) {
+            
             onSelected(item);
         }
     }
@@ -184,6 +190,8 @@ const renderActiveShape = (props:any) => {
 
 const ReactPie =  ({ value,output2Arry, functionMap,onSelected }: { onSelected?:Function,value?: any,output2Arry:OutputCtrlModel[][], functionMap: FunctionMap }) => {
 
+    
+    
 
     const  [activeIndex,setActiveIndex] = useState<number>(0);
     const onPieEnter = (_:any, index:number) => {
@@ -212,7 +220,6 @@ const ReactPie =  ({ value,output2Arry, functionMap,onSelected }: { onSelected?:
                     left: 20,
                     bottom: 5,
                 }}
-
                 onClick={(event) => {
                     if (value) {
                       
@@ -234,10 +241,12 @@ const ReactPie =  ({ value,output2Arry, functionMap,onSelected }: { onSelected?:
                     var cx= `${csize/2+(csize*pindex)}%`
                     var cy = '50%'
 
+                    
                     if(functionMap.UIViewSetting?.OutputSetting?.LayoutType === "vertical" ){
                         cy= `${csize/2+(csize*pindex)}%`
                         cx = '50%'
                     }
+                    
                     return (<Fragment key={`pie-${pindex}`}>
 
 
@@ -250,6 +259,15 @@ const ReactPie =  ({ value,output2Arry, functionMap,onSelected }: { onSelected?:
 
                             var outerRadius = 100 - (rindex * size)
                             var innerRadius = outerRadius - size;
+                            
+                            if (value && value.length > 0) {
+                                for (var i in value) {
+                                    var v = value[i][col.COL_COLUMN_NAME] ;
+                                    if(v && v.constructor === String){
+                                        value[i][col.COL_COLUMN_NAME] = parseFloat(v.toString())
+                                    }
+                                }
+                            }
                             return (
 
                                 <Pie key={`pie-${pindex}-${rindex}`} data={value}  
@@ -268,6 +286,7 @@ const ReactPie =  ({ value,output2Arry, functionMap,onSelected }: { onSelected?:
 
                                     {value.map((entry: any, index: number) => {
                                         var color = colorScale(index.toString())
+                                        
                                         return (
                                             <Cell key={`cell-${rindex}-${index}`} fill={color}  />
                                         )
@@ -290,13 +309,56 @@ const ReactPie =  ({ value,output2Arry, functionMap,onSelected }: { onSelected?:
 }
 const ReactsBar = ({ value,outputs, functionMap ,onSelected }: {onSelected?:Function, value?: any,outputs:OutputCtrlModel[], functionMap: FunctionMap }) => {
     
-    
+    const [domain,setDomain]= useState<number[]>();
     const onClickEvent = (data: any) => {
         if (onSelected) {
             onSelected(data); // Pass chartType to differentiate between Line and Area
         }
     };
    
+    useEffect(() => {
+        var minValue = undefined;
+        var maxValue = undefined;
+        var isBar = false;
+        if (value && outputs && value.length > 0 && outputs.length > 0) {
+            for (var i in outputs) {
+                var col = outputs[i];
+                var dataKey = col.COL_DISPLAY_NAME ? col.COL_DISPLAY_NAME : col.COL_COLUMN_NAME;
+                if (col.COL_BAR_TYPE === "Bar") {
+                    isBar = true;
+                }
+                for (var j in value) {
+                    var v = value[j];
+                    var num = v[dataKey];
+
+                    if (num) {
+                        if (num.constructor === String) {
+                            num = parseFloat(num.toString())
+                        }
+
+                        if (!maxValue || maxValue < num) {
+                            maxValue = num;
+                        }
+                        if (!minValue || minValue > num) {
+                            minValue = num;
+                        }
+                    }
+                }
+            }
+        }
+        if (maxValue > 0)
+        {
+            if(isBar){
+                    setDomain([0, maxValue])
+            }
+            else
+                setDomain([minValue?minValue:0, maxValue])
+        }
+        else
+            setDomain(undefined)
+
+            
+    }, [value, outputs])
     return (
         <ResponsiveContainer width="100%" className={clsx(functionMap.UIViewSetting?.OutputSetting?.LayoutType === "vertical"?"":"col" )}>
             <ComposedChart data={value}
@@ -318,7 +380,7 @@ const ReactsBar = ({ value,outputs, functionMap ,onSelected }: {onSelected?:Func
           
                 
                         {functionMap.UIViewSetting?.OutputSetting?.LayoutType === "vertical" ? <>
-                            <XAxis type="number" tickFormatter={NumberToNumberStyle}
+                            <XAxis type="number" tickFormatter={NumberToNumberStyle} domain={domain?domain:undefined}
                                 color={FlowLineStyle.FontColor}
                                 fontFamily={FlowLineStyle.FontFamily} fontSize={FlowLineStyle.FontSize} />
                             <YAxis type="category" dataKey="col_chart_display_id"
@@ -327,7 +389,7 @@ const ReactsBar = ({ value,outputs, functionMap ,onSelected }: {onSelected?:Func
                             />
                         </> :
                             <>
-                                <YAxis type="number" tickFormatter={NumberToNumberStyle}
+                                <YAxis type="number" tickFormatter={NumberToNumberStyle} domain={domain?domain:undefined}
                                     color={FlowLineStyle.FontColor} 
                                     fontFamily={FlowLineStyle.FontFamily} fontSize={FlowLineStyle.FontSize} />
                                 <XAxis type="category" dataKey="col_chart_display_id" 

@@ -1,6 +1,6 @@
 import { FC, useState, PropsWithChildren, ReactNode, Dispatch, SetStateAction, createContext, useContext, useRef } from 'react';
 
-import { PageModel, FlowRunEntity, OuputEventParams } from 'flowline_common_model/src/models';
+import { PageModel, FlowRunEntity, OuputEventParams } from 'flowline_common_model/result/models';
 
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider/LocalizationProvider.js';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs/AdapterDayjs.js';
@@ -26,7 +26,7 @@ export type ControlContextProps = {
     
     showLoading:Function;
     closeLoading:Function;
-    showCtrl: (type: "POPUP" | "DRAWER" | "FULLSCRREN"|string, ctrl: ReactNode, config: PopupConfig) => void;
+    showCtrl: (type: "POPUP" | "DRAWER" | "FULLSCRREN"|string, ctrl: ReactNode, config: PopupConfig|any|undefined) => void;
     isShowCtrl: (type: "POPUP" | "DRAWER" | "FULLSCRREN"|string) => boolean;
     closeCtrl: (type: "POPUP" | "DRAWER" | "FULLSCRREN" | "ALL" |string) => void;
     confirm:(title:string,msg:string,confirmHandler:Function)=>void;
@@ -119,7 +119,7 @@ export const ControlProvider: FC<WithChildren> = ({ children }) => {
     const closeLoading = () => { 
         loadingPanelCtrl.current?.Close();
     }
-    const showCtrl = (type: "POPUP" | "DRAWER" | "FULLSCRREN"|string, ctrl: ReactNode, config: PopupConfig) => {
+    const showCtrl = (type: "POPUP" | "DRAWER" | "FULLSCRREN"|string, ctrl: ReactNode, config: PopupConfig|any|undefined) => {
         if (type === "DRAWER")
             drawerPanelCtrl.current?.ShowCtrl(ctrl, config);
         else if (type === "POPUP")

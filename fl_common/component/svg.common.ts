@@ -1,4 +1,4 @@
-import { Guid } from "flowline_common_model/src/util.common";
+import { Guid } from "flowline_common_model/result/util.common";
 
 
 export interface SvgRectSubObj{

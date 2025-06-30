@@ -3,7 +3,7 @@ import  {useRef,FC,ReactNode,useState, Fragment, useEffect, CSSProperties} from 
 import { useAppContext } from './ctx.app.js'
 import clsx from 'clsx'
 
-import { Guid } from 'flowline_common_model/src/util.common';
+import { Guid } from 'flowline_common_model/result/util.common';
 import { FlowLineStyle } from './flowline.style.js'
 
 

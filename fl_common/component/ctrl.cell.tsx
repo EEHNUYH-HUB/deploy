@@ -4,8 +4,8 @@ import { ReactNode, useEffect, useMemo, useState } from 'react';
 import { GetDynamicButtonCss, StringToChipColor, StringToChipVariant, StringToCss } from './ui.utils.js';
 import { FlowLineStyle } from './flowline.style.js'
 import { JsonViewer } from './ctrl.panel.json.js';
-import { DateToStringShort, NumberToNumberStyle, RunJavascript, SetKeyValueforObj, StringKeyToValue } from "flowline_common_model/src/util.common"
-import { CellConditionalItem, Conditional, KeyValue, MuiButtonStyle, OutputCtrlModel } from 'flowline_common_model/src/models';
+import { DateToStringShort, NumberToNumberStyle, RunJavascript, SetKeyValueforObj, StringKeyToValue } from "flowline_common_model/result/util.common"
+import { CellConditionalItem, Conditional, KeyValue, MuiButtonStyle, OutputCtrlModel } from 'flowline_common_model/result/models';
 
 
 

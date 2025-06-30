@@ -7,7 +7,7 @@ import CellCtrl from "./ctrl.cell.js";
 import clsx from 'clsx';
 import { IconButton } from "@mui/material/index.js";
 import { ArrowDropDown, ArrowRight } from '@mui/icons-material';
-import { OutputCtrlModel } from 'flowline_common_model/src/models.js';
+import { OutputCtrlModel } from 'flowline_common_model/result/models.js';
 
 
 

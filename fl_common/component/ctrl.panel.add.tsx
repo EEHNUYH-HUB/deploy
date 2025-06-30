@@ -8,7 +8,7 @@ import { Divider, IconButton } from "@mui/material/index.js";
 
 
 import { Close, Add, Draw } from '@mui/icons-material';
-import { Guid } from 'flowline_common_model/src/util.common';
+import { Guid } from 'flowline_common_model/result/util.common';
 import { FlowLineStyle } from './flowline.style.js';
 import { useDrag, useDrop } from 'react-dnd';
 

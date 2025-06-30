@@ -3,7 +3,7 @@ import { Badge, Toolbar, IconButton, Typography, InputBase, Paper, MenuItem, Sel
 import { FilterList as FilterIcon } from '@mui/icons-material';
 import { FlowLineStyle } from './flowline.style.js';
 import { KeyValueBooleanCtrl, KeyValueCtrl, KeyValueSelectCtrl } from './ctrl.editors.js';
-import { KeyValue } from 'flowline_common_model/src/models.js';
+import { KeyValue } from 'flowline_common_model/result/models.js';
 import { FilterModel } from './ui.models.js';
 
 

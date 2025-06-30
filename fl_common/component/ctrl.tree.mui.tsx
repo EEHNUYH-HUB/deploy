@@ -6,7 +6,7 @@ import { FlowLineStyle } from './flowline.style.js';
 import { styled } from '@mui/material/styles/index.js';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView/index.js';
 import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem/index.js';
-import { OutputCtrlModel } from 'flowline_common_model/src/models.js';
+import { OutputCtrlModel } from 'flowline_common_model/result/models.js';
 import { CommonContainerCtrl } from './ctrl.dynamic.common.js';
 
 

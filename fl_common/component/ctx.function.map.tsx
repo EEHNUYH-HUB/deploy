@@ -1,6 +1,6 @@
 import { FC, useState, PropsWithChildren, createContext, useContext, useEffect, Dispatch, SetStateAction } from 'react';
 
-import { ActionModel, Dictionary, MapValue } from 'flowline_common_model/src/models';
+import { ActionModel, Dictionary, MapValue } from 'flowline_common_model/result/models';
 
 
 
